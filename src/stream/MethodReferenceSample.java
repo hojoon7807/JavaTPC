@@ -25,6 +25,7 @@ public class MethodReferenceSample {
         new ArrayList<>(Arrays.asList(stringArray));
         Arrays.sort(stringArray,String::compareToIgnoreCase);
         Arrays.asList(stringArray).stream().forEach(System.out::println);
+        Arrays.asList(stringArray).stream().forEach(a->System.out.println(a));
     }
     private void createInstance(){
         MakeString makeString=String::new; //chars -> new String(chars)
